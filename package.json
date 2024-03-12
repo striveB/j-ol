@@ -1,0 +1,26 @@
+{
+  "name": "j-ol",
+  "version": "1.0.0",
+  "description": "openlayers utils",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "j-ol"
+  },
+  "keywords": [
+    "openlayers",
+    "gis",
+    "utils",
+    "map"
+  ],
+  "author": "jun233s",
+  "license": "ISC",
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "ol": "^9.0.0",
+    "proj4": "^2.10.0"
+  }
+}
