@@ -2,7 +2,6 @@ import * as turf from "@turf/turf";
 import { WKT, GeoJSON } from "ol/format";
 import Feature from "ol/Feature";
 import { Polygon } from "ol/geom";
-import { Message } from "element-ui";
 let timer = 0
 window.turf = turf;
 class JMapUtils {
@@ -184,10 +183,7 @@ class JMapUtils {
               let union = turf.union(feature, smallFeature);
               if ((Date.now() - timer) >= 500) {
                 setTimeout(()=>{
-                  Message({
-                    type: "warning",
-                    message: `其中小于${minArea}平米的细斑已自动合并！`,
-                  });
+                  console.info(`其中小于${minArea}平米的细斑已自动合并！`)
                 }, 1)
                 timer = Date.now()
               }
