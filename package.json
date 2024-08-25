@@ -1,29 +1,11 @@
 {
-  "name": "@jun233/j-ol",
-  "version": "0.0.1",
-  "type": "module",
-  "description": "openlayers utils",
-  "main": "Index.js",
+  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "j-ol"
-  },
-  "keywords": [
-    "openlayers",
-    "gis",
-    "utils",
-    "map"
-  ],
-  "author": "jun233",
-  "license": "ISC",
-  "dependencies": {
-    "@turf/turf": "^6.5.0",
-    "proj4": "^2.10.0"
-  },
-  "peerDependencies": {
-    "ol": "^9.0.0"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
