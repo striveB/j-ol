@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import JMap from '@j-ol/core'
 import HelloWorld from './components/HelloWorld.vue'
+console.log(JMap)
 </script>
 
 <template>

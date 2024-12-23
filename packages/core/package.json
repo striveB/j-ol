@@ -1,6 +1,6 @@
 {
   "name": "@j-ol/core",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "openlayers utils",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,8 @@
     "map"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^10.1.0"
+  }
 }
