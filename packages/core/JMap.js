@@ -1744,7 +1744,7 @@ class JMap extends JMapUtils {
     });
     this.history.push(features);
   }
-  // 回退/重做（重做还有问题 不要用）
+  // 回退/重做
   rollback(type = "back") {
     if (!this.currentLayer) {
       return;
