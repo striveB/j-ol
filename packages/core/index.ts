@@ -1,15 +1,16 @@
-import JMapUtils from './JMapUtils.js'
 import { Map, View } from 'ol'
 import { Vector as VectorLayer, Tile } from "ol/layer";
 import { Vector as VectorSource, XYZ } from "ol/source";
 
-class JMap extends JMapUtils {
-  constructor(map) {
-    super();
+class JMap {
+  map: Map | undefined;
+  projection: string;
+
+  constructor(map?: Map) {
     this.map = map;
     this.projection = 'EPSG:4326';
   }
-  initMap(target) {
+  initMap(target: string) {
     this.map = new Map({
       target,
       controls: [],
@@ -30,9 +31,8 @@ class JMap extends JMapUtils {
     return this.map;
   }
   // 创建一个图层
-  createLayer(name) {
+  createLayer() {
     let layer = new VectorLayer({
-      name: name,
       source: new VectorSource(),
     });
     this.map.addLayer(layer);
